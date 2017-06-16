@@ -1,0 +1,26 @@
+{% load xx %}
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ 	<h1>Home</h1> 
+ 	<h1>{{ name }}</h1> 
+ 	<h4>{{ age }}</h4> 
+	<ul>
+	{% for item in user_list %}
+		<li>{{ item }},{{ forloop.first }}</li>
+	{% endfor %}
+	</ul>
+
+	{% my_simple_time 1 2 3 %}
+	{% my_input 'id_username' 'hide' %}
+ </body>
+</html>
+
